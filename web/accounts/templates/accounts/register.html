@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+{% block body %}
+  <h1>회원가입</h1>
+  <form method="post">
+    {{ register_form.csrf_token }}
+    {{ form_field(register_form.user_id) }}
+    {{ form_field(register_form.user_name) }}
+    {{ form_field(register_form.user_pw) }}
+    {{ form_field(register_form.user_pw_confirm) }}
+    {{ form_field(register_form.user_type) }}
+    <button type="submit">회원가입</button>
+  </form>
+  <a href="{{ url_for('main.index') }}">메인으로</a>
+  <a href="{{ url_for('accounts.login') }}">로그인</a>
+{% endblock %}
