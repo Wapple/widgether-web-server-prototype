@@ -4,38 +4,56 @@
   <title>로그인</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 
   <style type="text/css">
-
-    .widget-list div {
-      margin: 0 auto;
+    .header {
+      height: 55px;
+      background-color: #428bca;
+    }
+    .content {
+      margin-top: 0px;
     }
     .widget {
-      min-width: 300px;
-      max-width: 600px;
+      border:1px;
+      border-color: red;
+      background-color: #F9F9F9;
+      height: 800px;
+      padding: 10px;
     }
-     .widget a i {
-      text-align: center;
-      margin-top: 7px;
-      color: rgba(0,0,0,0.5);
+    .widget-icon {
+      width: 150px;
+      height: 150px;
+      margin: 40px auto 10px auto;
+      background-color: white;
+    }
+    .widget-icon i {
+      margin: 25px 0 0 10px;
     }
     .widget-title {
-      text-align: left;
-      color: rgba(0,0,0,0.5);
+      color: rgba(0,0,0,0.8);
+      margin-bottom: 35px;
     }
-    .thumbnail {
-      margin-bottom: 0px;
+    .widget-addbutton button {
+      height: 45px;
     }
     .widget-description {
       text-align: left;
       margin-top: 10px;
       color: rgba(0,0,0,0.5);
     }
-    .material-icons.md-80 {
+    .widget-info {
+      margin-top: 30px;
+    }
+    .material-icons.md-30 {
       font-size: 30px;
+      color: white;
+      margin-top: 10px;
+    }
+    .material-icons.md-100 {
+      font-size: 100px;
     }
 
   </style>
@@ -47,52 +65,37 @@
   <div class="container container-fluid">
 
     <div class="header row">
-      <div class="col-md-12" style="background-color:pink; height: 60px;">
-        <span></span>
+      <div class="col-md-12"">
+        <i class="material-icons md-30">menu</i>
       </div>
     </div>
 
-    <div class="widget">
+    <div class="content row">
 
-      <div class="widget col-lg-12 col-md-12 col-xs-12">
-        <a class="thumbnail row">
-          <i class="widget-icon material-icons col-xs-2">cloud</i>
-            <h4 class="widget-title col-xs-2">Slack</h4>
-            <p class="widget-description col-xs-8">slack, pollt application ..</p>
-        </a>
+      <div class="widget col-xs-12 col-md-8">
+        <div class="widget-icon row text-center">
+          <i class="material-icons md-100 col-xs-8 col-md-8 col-lg-8">cloud</i>
+        </div>
+        <div class="widget-title ol-xs-12">
+          <h2 class="text-center">Slack Bot</h2>
+        </div>
+        <div class="widget-addbutton col-xs-12">
+          <button type="button" class="btn btn-primary btn-lg btn-block">Add Widget</button>
+        </div>
+
+        <div class="widget-info col-xs-12">
+          <ul class="info-list nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Info</a></li>
+            <li role="presentation"><a href="#">developer</a></li>
+          </ul>
+
+
+        </div>
+
+
       </div>
 
-      <div class="widget col-lg-12 col-md-12 col-xs-12">
-        <a class="thumbnail row">
-          <i class="widget-icon material-icons col-xs-2">cloud</i>
-            <h4 class="widget-title col-xs-2">Slack</h4>
-            <p class="widget-description col-xs-8">slack, pollt application ..</p>
-        </a>
-      </div>
 
-      <div class="widget col-lg-12 col-md-12 col-xs-12">
-        <a class="thumbnail row">
-          <i class="widget-icon material-icons col-xs-2">cloud</i>
-            <h4 class="widget-title col-xs-2">Slack</h4>
-            <p class="widget-description col-xs-8">slack, pollt application ..</p>
-        </a>
-      </div>
-
-      <div class="widget col-lg-12 col-md-12 col-xs-12">
-        <a class="thumbnail row">
-          <i class="widget-icon material-icons col-xs-2">cloud</i>
-            <h4 class="widget-title col-xs-2">Slack</h4>
-            <p class="widget-description col-xs-8">slack, pollt application ..</p>
-        </a>
-      </div>
-
-      <div class="widget col-lg-12 col-md-12 col-xs-12">
-        <a class="thumbnail row">
-          <i class="widget-icon material-icons col-xs-2">cloud</i>
-            <h4 class="widget-title col-xs-2">Slack</h4>
-            <p class="widget-description col-xs-8">slack, pollt application ..</p>
-        </a>
-      </div>
 
 
 
