@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>로그인</title>
+  <title>위젯 상세화면</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> -->
@@ -17,9 +17,8 @@
       margin-top: 0px;
     }
     .widget {
-      border:1px;
-      border-color: red;
       background-color: #F9F9F9;
+      max-width: 600px;
       height: 800px;
       padding: 10px;
     }
@@ -39,10 +38,12 @@
     .widget-addbutton button {
       height: 45px;
     }
-    .widget-description {
+    .widget-description pre {
+      height: 350px;
       text-align: left;
-      margin-top: 10px;
-      color: rgba(0,0,0,0.5);
+      white-space: pre-wrap;
+      background-color: white;
+      overflow-y:scroll
     }
     .widget-info {
       margin-top: 30px;
@@ -61,7 +62,6 @@
 </head>
 <body>
 
-
   <div class="container container-fluid">
 
     <div class="header row">
@@ -72,7 +72,7 @@
 
     <div class="content row">
 
-      <div class="widget col-xs-12 col-md-8">
+      <div class="widget col-xs-12 col-md-8 ">
         <div class="widget-icon row text-center">
           <i class="material-icons md-100 col-xs-8 col-md-8 col-lg-8">cloud</i>
         </div>
@@ -89,37 +89,42 @@
             <li role="presentation"><a href="#">developer</a></li>
           </ul>
 
+          <div class="row">
+            <div class="widget-description col-xs-12">
+              <pre class="">카카오톡은 전세계 어디서나 안드로이드폰과 아이폰 사용자간 무료로 메시지를 주고 받을 수 있는 메신저 서비스입니다.
 
+
+가입과 로그인 없이 전화번호만 있으면 실시간 그룹채팅 및 1:1 채팅을 즐길 수 있고, 사진, 동영상, 연락처 등의 멀티미디어도 간편하게 주고 받을 수 있습니다. 카카오톡으로 친구, 동료, 가족들과 보다 편리하고 다양한 멀티미디어 채팅을 시작해 보세요.
+
+
+주요 기능:
+- 채팅 & 멀티미디어 전송(사진, 동영상, 음성메시지 등)
+- 선명한 음질의 보이스톡과 그룹콜
+- 얼굴보며 대화하는 영상통화, 페이스톡
+- 결제, 청구서, 송금, 멤버십까지 카카오페이
+- 유용하고 안전한 주문, 배송, 결제 등의 정보성 메시지, 알림톡
+- 스타일 찾기, 예약 및 결제를 한번에 카카오헤어샵
+- 다양한 이모티콘과 아이템 스토어
+- 일정, 투표, 공지로 더욱 스마트해진 채팅
+- 혜택과 정보가 풍부한 플러스 친구
+- 웨어러블 기기에서 간편하게 음성 답장
+
+-----------------------
+
+개발자 연락처 :
+주소 : 242 Cheomdan-ro, Jeju-si, Jeju-do, Korea
+카카오 고객센터 : 1577-3754
+</pre>
+            </div>
+          </div>
         </div>
 
-
       </div>
-
-
-
-
-
-
-
-
-
-
 
     </div>
 
 
-
-
-
-
-
-
-
-
   </div>
-
-
-
 
 
 </body>
